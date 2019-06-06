@@ -33,6 +33,10 @@ module.exports = {
       '/uploads': {
         target: 'http://localhost:9090',
         changeOrigin: true
+      },
+      '/writer': {
+        target: 'http://localhost:9090',
+        changeOrigin: true
       }
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"

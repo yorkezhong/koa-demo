@@ -6,6 +6,8 @@
         <router-link to="/page/goods">地址管理</router-link>
         <router-link to="/page/platform">平台管理</router-link>
         <router-link to="/page/dashboard">dashboard</router-link>
+        <router-link to="/page/writer">writer</router-link>
+
       </div>
       <div class="header-item" id="logout">
         <strong>欢迎你，{{ name }}</strong>

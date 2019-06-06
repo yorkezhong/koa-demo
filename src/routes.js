@@ -8,7 +8,7 @@ import Goods from './components/asideContainer/goods.vue'
 import GoodsList from './components/goods/list.vue'
 import GoodsManagement from './components/goods/management.vue'
 import Dashboard from './views/Dashboard.vue'
-
+import Writer from "./views/writer.vue"
 import NotFound from './components/error/notFound.vue'
 
 export default [{
@@ -56,6 +56,10 @@ export default [{
             {
                 path: 'dashboard',
                 component: Dashboard
+            },
+            {
+                path:"writer",
+                component:Writer
             }
         ]
     },

@@ -7,7 +7,9 @@ const path = require('path'),
   historyApiFallback = require('koa-history-api-fallback'),
   userRoute = require('./server/routes/user.js'),
   goodsRoute = require('./server/routes/goods.js'),
+ writerRoute = require('./server/routes/writer.js'),
   imageRoute = require('./server/routes/image.js');
+
 
 koa.use(bodyparser());
 koa.use(logger());
@@ -26,6 +28,7 @@ router.use('/auth', userRoute.routes());
 router.use(goodsRoute.routes());
 
 router.use(imageRoute.routes());
+router.use(writerRoute.routes());
 koa.use(require('koa-static')(__dirname+"/uploads"));//解析静态文件。
 koa.use(router.routes()); // 将路由规则挂载到Koa上。
 

@@ -3,11 +3,20 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 import VueRouter from 'vue-router'
 import Axios from 'axios'
+import VueQuillEditor from 'vue-quill-editor'
+
+// require styles
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
+
 
 Vue.use(ElementUI);
 Vue.use(VueRouter);
 Vue.prototype.$http = Axios
-
+Vue.use(VueQuillEditor, {
+  placeholder: '请输入内容',
+});
 import routes from './routes'
 const router =  new VueRouter({
   mode: 'history',
