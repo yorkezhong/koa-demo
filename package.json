@@ -11,7 +11,7 @@
         "start": "concurrently -k \"npm run server\" \"npm run dev\""
     },
     "dependencies": {
-        "axios": "^0.15.3",
+        "axios": "^0.21.1",
         "bcryptjs": "^2.4.0",
         "busboy": "^0.2.14",
         "element-ui": "^1.4.13",
